@@ -1,0 +1,318 @@
+{
+    "pasto limpio denso inundable": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "pasto limpio abierto de tierra firme": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "vegetacion secundaria baja de tierra firme": {
+        "condicion": "seminatural",
+        "cob_agrup": "vegetacion secundaria"
+    },
+    "vegetacion secundaria alta de tierra firme": {
+        "condicion": "seminatural",
+        "cob_agrup": "vegetacion secundaria"
+    },
+    "bosque denso alto de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "bosque denso alto inundable heterogeneo": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "pasto limpio denso de tierra firme": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque denso bajo de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "arbustal denso alto de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "arbustales"
+    },
+    "mosaico de pastos y vegetacion secundaria": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "pasto enmalezado inundable": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque de galeria alto": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "herbazal denso de tierra firme arbolado": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "pastos densos arbolados de tierra firme": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque fragmentado alto con vegetacion secundaria": {
+        "condicion": "seminatural",
+        "cob_agrup": "fragmentados"
+    },
+    "pasto enmalezado de tierra firme": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "zonas pantanosas": {
+        "condicion": "natural",
+        "cob_agrup": "areas humedas"
+    },
+    "pasto limpio abierto inundable": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "lagunas, lagos y cienagas naturales": {
+        "condicion": "natural",
+        "cob_agrup": "superficies de agua"
+    },
+    "vegetacion secundaria baja inundable": {
+        "condicion": "seminatural",
+        "cob_agrup": "vegetacion secundaria"
+    },
+    "tejido urbano discontinuo": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "vegetacion secundaria alta inundable": {
+        "condicion": "seminatural",
+        "cob_agrup": "vegetacion secundaria"
+    },
+    "zonas quemadas": {
+        "condicion": "seminatural",
+        "cob_agrup": "tierras degradadas"
+    },
+    "otros cultivos transitorios": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "rios": {
+        "condicion": "natural",
+        "cob_agrup": "superficies de agua"
+    },
+    "zonas industriales": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "otros cultivos permanentes herbaceos": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "herbazal denso alto de tierra firme no arbolado": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "pastos abiertos arbolados de tierra firme": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque fragmentado alto con pastos y cultivos": {
+        "condicion": "seminatural",
+        "cob_agrup": "fragmentados"
+    },
+    "playas": {
+        "condicion": "natural",
+        "cob_agrup": "areas abiertas con poca vegetacion"
+    },
+    "mosaico de pastos y cultivos": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "red vial y territorios asociados": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "mosaico de pastos con espacios naturales arboreos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "mosaico de cultivos, pastos y espacios naturales arboreos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "pastos densos arbolados inundables": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "herbazal denso de tierra firme con arbustos": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "herbazal abierto rocoso": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "pastos abiertos arbolados inundables": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "tejido urbano continuo": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "arroz": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "herbazal denso inundable arbolado": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "vegetacion acuatica sobre cuerpo de agua": {
+        "condicion": "natural",
+        "cob_agrup": "areas humedas"
+    },
+    "estanques para la acuicultura continental": {
+        "condicion": "transformado",
+        "cob_agrup": "superficies de agua"
+    },
+    "remocion en masa": {
+        "condicion": "seminatural",
+        "cob_agrup": "tierras degradadas"
+    },
+    "herbazal denso inundable no arbolado": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "herbazal denso bajo de tierra firme no arbolado": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "bosque denso bajo inundable": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "tierras erosionadas": {
+        "condicion": "seminatural",
+        "cob_agrup": "tierras degradadas"
+    },
+    "arbustal denso bajo de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "arbustales"
+    },
+    "mosaico de pastos con espacios naturales arbustivos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "arbustal abierto mesofilo": {
+        "condicion": "natural",
+        "cob_agrup": "arbustales"
+    },
+    "mosaico de cultivos, pastos y vegetacion secundaria": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "arbustal denso alto inundable": {
+        "condicion": "natural",
+        "cob_agrup": "arbustales"
+    },
+    "mosaico de pastos con espacios naturales humedos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "aeropuerto con infraestructura asociada": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "bosque fragmentado bajo con vegetacion secundaria": {
+        "condicion": "seminatural",
+        "cob_agrup": "fragmentados"
+    },
+    "mosaico de cultivos y espacios naturales arboreos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "mosaico de pastos con espacios naturales herbaceos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque abierto bajo inundable": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "mosaico de cultivos y vegetacion secundaria": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque de galeria bajo": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "otros cultivos permanentes arbustivos": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "otras zonas verdes urbanas": {
+        "condicion": "transformado",
+        "cob_agrup": "territorios artificializados"
+    },
+    "herbazal abierto arenoso": {
+        "condicion": "natural",
+        "cob_agrup": "herbazales"
+    },
+    "bosque fragmentado bajo con pastos y cultivos": {
+        "condicion": "seminatural",
+        "cob_agrup": "fragmentados"
+    },
+    "palma de aceite": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "mosaico de cultivos": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "otros cultivos permanentes arboreos": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "mosaico de cultivos, pastos y espacios naturales arbustivos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "mosaico de cultivos, pastos y espacios naturales herbaceos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "bosque abierto alto de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "arbustal denso bajo inundable": {
+        "condicion": "natural",
+        "cob_agrup": "arbustales"
+    },
+    "bosque abierto bajo de tierra firme": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "afloramientos rocosos": {
+        "condicion": "natural",
+        "cob_agrup": "areas abiertas con poca vegetacion"
+    },
+    "cacao": {
+        "condicion": "transformado",
+        "cob_agrup": "cultivos"
+    },
+    "bosque abierto alto inundable": {
+        "condicion": "natural",
+        "cob_agrup": "bosques"
+    },
+    "mosaico de cultivos y espacios naturales herbaceos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    },
+    "mosaico de cultivos y espacios naturales arbustivos": {
+        "condicion": "transformado",
+        "cob_agrup": "pastizales"
+    }
+}
