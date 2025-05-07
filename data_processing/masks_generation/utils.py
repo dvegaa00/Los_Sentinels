@@ -94,6 +94,8 @@ def crear_mascara_coberturas_with_image(gdf, class_mapping, zone_image_path,
     bbox = box(*img_bounds)
     gdf = gdf.to_crs(img_crs)
     gdf_filtered = gdf[gdf.intersects(bbox)].copy()
+    gdf_filtered = fix_geometries(gdf_filtered)
+    
     if gdf_filtered.empty:
         print("⚠️ No se encontraron geometrías que intersecten con la imagen.")
         return np.zeros((img_height, img_width), dtype=np.uint8)
