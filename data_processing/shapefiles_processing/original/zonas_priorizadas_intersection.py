@@ -1,4 +1,4 @@
-from project.processing.geo_utils import (read_shapefile, save_shapefile, convert_gdf_projection, 
+from utils import (read_shapefile, save_shapefile, convert_gdf_projection, 
                             fix_geometries, create_gdf_zones, calculate_areas, find_intersection)
 from utils.visualization import plot_gdf_zones
 import os

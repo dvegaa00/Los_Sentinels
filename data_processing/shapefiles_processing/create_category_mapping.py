@@ -1,5 +1,5 @@
 
-from geo_utils import (crear_mascara_coberturas_coco, find_intersection, fix_geometries, read_shapefile, convert_gdf_projection)
+from utils import (read_shapefile)
 from tqdm import tqdm
 import os
 import json

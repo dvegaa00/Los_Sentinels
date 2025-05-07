@@ -1,5 +1,5 @@
 
-from geo_utils import (crear_mascara_coberturas_with_image, find_intersection, fix_geometries, read_shapefile, convert_gdf_projection)
+from utils import (crear_mascara_coberturas_with_image, find_intersection, fix_geometries, read_shapefile, convert_gdf_projection)
 from concurrent.futures import ProcessPoolExecutor
 import os
 import json
