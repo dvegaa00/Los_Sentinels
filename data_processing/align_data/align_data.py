@@ -12,25 +12,6 @@ retina_path = pathlib.Path(__name__).resolve().parent.parent
 sys.path.append(str(retina_path))
 from scripts.utils import *
 
-#Get bounds
-path_shp = "/home/dvegaa/ReTINA/interseccion/scale_10k/Zonas_Priorizadas_interseccion_10k.shp"
-gdf = gpd.read_file(path_shp)
-gdf = gdf.to_crs("EPSG:4326")
-bounds = gdf.total_bounds
-
-#Define zones coordinates [xmin_lon, ymin_lat, xmax_lon, ymax_lat]
-zonas = [
-    {"id": 1, "bounds": [-74.72079653, -0.130331786, -73.99637514, 0.92532454]},
-    {"id": 2, "bounds": [-75.30668917, 0.806811201, -74.97104808, 1.094386973]},
-    {"id": 3, "bounds": [-76.39628739, 0.956933946, -76.07521922, 1.161263215]},
-    {"id": 4, "bounds": [-76.05944061, 1.263586621, -75.87490682, 1.493635654]},
-    {"id": 5, "bounds": [-74.40181057, 1.06107717, -73.78883587, 1.81448118]},
-    {"id": 6, "bounds": [-73.42953349, 1.608678975, -71.78541715, 2.877770836]},
-    {"id": 7, "bounds": [-73.84210418, 2.706450857, -73.56563893, 2.976003546]},
-    {"id": 8, "bounds": [-73.9463501, 3.104388851, -73.79384612, 3.217615258]},
-    {"id": 9, "bounds": [-68.10768821, 3.901274681, -67.70618035, 4.167607701]},
-]
-
 zona = 1
 year = "2019"
 semester = "S1"
