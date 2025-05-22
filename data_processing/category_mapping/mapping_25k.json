@@ -1,0 +1,18 @@
+{
+    "Arbustales": 1,
+    "Bosques": 2,
+    "Cultivos": 3,
+    "Fragmentados": 4,
+    "Herbazales": 5,
+    "Pastizales": 6,
+    "Superficies de agua": 7,
+    "Territorios artificializados": 8,
+    "Tierras degradadas": 9,
+    "Vegetaci\u00c3\u00b3n secundaria": 10,
+    "Vegetaci\u00f2n secundaria": 11,
+    "Vegetaci\u00f3n secundaria": 12,
+    "\u00c1reas abiertas con poca vegetaci\u00f3n": 13,
+    "\u00c1reas h\u00famedas": 14,
+    "\u00c3\u0081reas abiertas con poca vegetaci\u00c3\u00b3n": 15,
+    "\u00c3\u0081reas h\u00c3\u00bamedas": 16
+}
