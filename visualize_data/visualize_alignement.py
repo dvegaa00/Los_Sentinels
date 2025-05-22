@@ -11,6 +11,7 @@ clouds = "70"
 if semester == "S1":
     path_mask = f"/home/dvegaa/ReTINA/sentinel_masks/sentinel2/median/{year}-SI/zona_{str(zona)}/mascara_coberturas_agrupadas.tif"
     path_image = f"/home/dvegaa/ReTINA/sentinel_images/sentinel2/median/{year}-SI/zona_{str(zona)}_clouds_{clouds}.tif"
+    #path_image = f"/home/dvegaa/ReTINA/sentinel_images_fake/zona{str(zona)}_2023_S1_RGB_FAKE.tif"
 else:
     path_mask = f"/home/dvegaa/ReTINA/sentinel_masks/sentinel2/median/{year}-SI/zona_{str(zona)}/mascara_coberturas_agrupadas.tif"
     path_image = f"/home/dvegaa/ReTINA/sentinel_images/sentinel2/median/{year}-SII/zona_{str(zona)}_clouds_{clouds}.tif"
@@ -18,7 +19,7 @@ else:
 epsilon = 1e-10
 with rasterio.open(path_mask) as mask_ds, rasterio.open(path_image) as image_ds:
     aligned_mask = mask_ds.read(1).astype(np.float32)
-    banda_4 = image_ds.read(3).astype(np.float32)
+    banda_4 = image_ds.read(3).astype(np.float32) 
     banda_8 = image_ds.read(4).astype(np.float32)
     ndvi = (banda_8 - banda_4) / (banda_8 + banda_4 + epsilon)
 
@@ -36,7 +37,7 @@ with rasterio.open(path_image) as image_ds:
     max_rgb = np.nanmax(rgb)
     rgb /= max_rgb
 
-save_path = os.path.join("/home/dvegaa/ReTINA/Los_Sentinels/Results", f"{year}_{semester}", f"Zona_{str(zona)}")
+save_path = os.path.join("/home/dvegaa/ReTINA/Los_Sentinels/Results_fake", f"{year}_{semester}", f"Zona_{str(zona)}")
 os.makedirs(save_path, exist_ok=True)
 
 # Show submask
@@ -45,6 +46,7 @@ plt.figure()
 plt.imshow(aligned_mask, cmap='gray', vmin=0, vmax=2)  # You can change cmap depending on the type of image
 plt.axis('off')  # Hide axes
 plt.savefig(os.path.join(save_path, "mask_crop.png"), format='png', bbox_inches='tight', pad_inches=0)
+
 
 # Show satellite image NDVI
 print("Visualize image")

@@ -14,7 +14,7 @@ def process_shp_date_take(shp_date_take, scale, amazon_crs, scales_intersection,
     take_date = "-".join([take_date[-5], take_date[-4]])
 
     print(f"[{shp_date_take}] Finding shapefile's intersection...")
-
+    breakpoint()
     gdf = read_shapefile(input_shp)
     gdf = convert_gdf_projection(gdf, amazon_crs)
     gdf = find_intersection(gdf, scales_intersection)

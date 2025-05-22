@@ -14,9 +14,11 @@ clouds = "5"
 if semester == "S1":
     path_mask = f"/home/dvegaa/ReTINA/sentinel_masks/sentinel2/median/{year}-SI/zona_{str(zona)}/mascara_coberturas_agrupadas.tif"
     path_image = f"/home/dvegaa/ReTINA/sentinel_images/sentinel2/median/{year}-SI/zona_{str(zona)}_clouds_{clouds}.tif"
+    #path_image = f"/home/dvegaa/ReTINA/sentinel_images_fake/zona{str(zona)}_2023_S1_RGB_FAKE.tif"
 else:
     path_mask = f"/home/dvegaa/ReTINA/sentinel_masks/sentinel2/median/{year}-SI/zona_{str(zona)}/mascara_coberturas_agrupadas.tif"
     path_image = f"/home/dvegaa/ReTINA/sentinel_images/sentinel2/median/{year}-SII/zona_{str(zona)}_clouds_{clouds}.tif"
+
 
 epsilon = 1e-10
 with rasterio.open(path_mask) as mask_ds, rasterio.open(path_image) as image_ds:
@@ -25,7 +27,23 @@ with rasterio.open(path_mask) as mask_ds, rasterio.open(path_image) as image_ds:
     banda_8 = image_ds.read(4).astype(np.float32)
     ndvi = (banda_8 - banda_4) / (banda_8 + banda_4 + epsilon)
 
-save_path = os.path.join("/home/dvegaa/ReTINA/Los_Sentinels/Results", f"{year}_{semester}", f"Zona_{str(zona)}", "Patches")
+
+with rasterio.open(path_mask) as mask_ds, rasterio.open(path_image) as image_ds:
+    # Lee las 3 bandas (r, g, b)
+    aligned_mask = mask_ds.read(1).astype(np.float32)
+    r = image_ds.read(1).astype(np.float32)
+    g = image_ds.read(2).astype(np.float32)
+    b = image_ds.read(3).astype(np.float32)
+    
+    # Combina las bandas en una sola imagen (H, W, 3)
+    rgb = np.stack([r, g, b], axis=-1)
+
+    # Normaliza para visualizar correctamente
+    max_rgb = np.nanmax(rgb)
+    rgb /= max_rgb
+
+
+save_path = os.path.join("/home/dvegaa/ReTINA/Los_Sentinels/Results_fake", f"{year}_{semester}", f"Zona_{str(zona)}", "Patches")
 os.makedirs(save_path, exist_ok=True)
 
 ######################################################################################################################################
