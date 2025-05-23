@@ -47,7 +47,7 @@ def process_shp_date_take(shp_date_take, scale, amazon_crs, scales_intersection,
 
 def main():
     amazon_crs = 'epsg:3117'
-    scales = ['10k']
+    scales = ['25k']
     binarize = False
 
     instersection_all_zones_25k = fix_geometries(read_shapefile("/home/srodriguezr2/srodriguezr2_2/retina/outputs/interseccion/scale_25k/Zonas_Priorizadas_interseccion_25k.shp"))
@@ -63,9 +63,10 @@ def main():
         shp_date_takes = sorted(os.listdir(data_root_path))
 
         input_images_path = "/home/srodriguezr2/srodriguezr2_2/retina/data/sentinel_images/sentinel2/median"
-        output_masks_path = "/home/srodriguezr2/srodriguezr2_2/retina/data/sentinel_masks/sentinel2/median"
+        output_masks_path = "/home/srodriguezr2/srodriguezr2_2/retina/data/sentinel_masks/sentinel2/median_supercategories"
 
-        class_mapping = json.load(open(f"/home/srodriguezr2/srodriguezr2_2/retina/project/outputs/category_mapping/mapping_{scale}.json"))
+        class_mapping = json.load(open(f"/home/srodriguezr2/srodriguezr2_2/retina/Los_Sentinels/data_processing/category_mapping/mapping_{scale}.json"))
+
         class_key = 'descripcio' if scale == '10k' else 'cob_agrup'
 
         with ProcessPoolExecutor(max_workers=12) as executor:
@@ -87,7 +88,6 @@ def main():
                     )
                 )
 
-            # Optional: wait for all to complete with progress bar
             for f in tqdm(futures, desc=f"Processing {scale}..."):
                 f.result()
 
